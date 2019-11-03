@@ -1,0 +1,144 @@
+@charset "utf-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css?family=Blinker|Patrick+Hand|Permanent+Marker&display=swap');
+
+html * {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: #333333;
+	
+	font-family: 'Blinker', arial, sans-serif;
+}
+
+header {
+	position: fixed;
+	padding: 1em;
+	z-index: 1000;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background:rgba(80,80,80,.85);
+	
+	font-family: 'Permanent Marker', arial, sans-serif;
+	font-size: 1em;
+	color: #f5f3ef;
+	
+	
+}
+
+main {
+	color: #f5f3ef;
+}
+
+.site-nav {
+	z-index: 400;
+	top: 0;
+	left: 0;
+	opacity: 85%;
+	background: rgba(255, 255, 255, 0);
+	position: relative;
+	display: block !important;
+	float: right;
+	width: 30%;
+	padding: 0 1em 0 0;
+	height: 1.5em;
+	
+}
+
+.site-nav ul {
+	list-style-type: none;
+	margin: 0;
+	text-align: right;
+}
+
+.site-nav ul li {
+	display: inline-block;
+	margin-bottom: 0;
+	margin-left: 1.5em;
+}
+
+.site-nav ul li a {
+	text-decoration: none;
+	color: #f5f3ef;
+	font-size: 1em;
+	transition: color 0.5s;
+}
+
+.site-nav ul li a:hover {
+	color: #7C7C7C;
+}
+
+.hero {
+	position: relative;
+	height: 54vw;
+	background: rgba(255, 255, 255, 0.2);
+}
+
+.intro {
+	position: relative;
+	color: #F3F3F3;
+	background: rgba(255, 255, 255, 0.1);
+	height: 30vw;
+	padding: 9em 6em 5em;
+	font-size: 1.5em;
+	
+}
+
+.platforms {
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+}
+
+.youtube {
+	display: flex;
+}
+
+.youtube .channel-image {
+	padding: 8% 0% 8% 23.5%;
+	background-image: -moz-linear-gradient( 135deg, rgb(150, 15, 220) 0%, rgb(64, 255, 64) 100%);
+	background-image: -webkit-linear-gradient( 135deg, rgb(150,15,220) 0%, rgb(64, 255, 64) 100%);
+	background-image: -ms-linear-gradient( 135deg, rgb(150,15,220) 0%, rgb(64, 255, 64) 100%);
+	width: 50%;
+}
+
+.youtube figure {
+	position: relative;
+	vertical-align: middle;
+	padding: 50% 10%;
+	background: #cef0f2;
+}
+
+.youtube .channel-description {
+	background: #333333;
+	width: 50%;
+	padding: 11.25em 10em 11.5em;
+}
+
+footer {
+	margin-top: -3em;
+	padding: 8.75em 0 2em;
+	height: 10vw;
+	background-image:-moz-linear-gradient( -45deg, rgb(255,91,127) 0%, rgb(255,213,86) 100%);
+	background-image: -webkit-linear-gradient( -45deg, rgb(255,91,127) 0%, rgb(255,213,86) 100%);
+	background-image: -ms-linear-gradient( -45deg, rgb(255,91,127) 0%, rgb(255,213,86) 100%);
+}
+
+#download-link {
+	text-decoration: none;
+	color: inherit;
+	animation: download-link-animate 1s linear 0s infinite alternate;
+}
+
+@keyframes download-link-animate {
+	0%		{color: blue;}
+	100% 	{color: white;}
+}
+
+#title {
+	font-size: 2em;
+}
